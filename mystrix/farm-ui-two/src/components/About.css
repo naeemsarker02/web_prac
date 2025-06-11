@@ -1,0 +1,111 @@
+/* AboutUs.css */
+
+.about-section {
+    background-color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(13,110,253,0.1) 0%, rgba(255,255,255,0) 50%);
+    z-index: 0;
+  }
+  
+  .underline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #0d6efd, #00b4ff);
+    border-radius: 2px;
+  }
+  
+  .about-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ 
+  }
+  
+  .team-card {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  }
+  
+  .team-img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team-img-container img {
+    transition: all 0.5s ease;
+  }
+  
+  .team-card:hover .team-img-container img {
+    transform: scale(1.1);
+  }
+  
+  .social-links {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: rgba(13,110,253,0.8);
+    padding: 10px 0;
+  }
+  
+  .team-card:hover .social-links {
+    bottom: 0;
+  }
+  
+  .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #d1e3ff;
+    transform: translateY(-3px);
+  }
+  
+  .stats-section {
+    background: white;
+    background: linear-gradient(135deg, #0d6efd 0%, #00b4ff 100%);
+    color: white;
+  }
+  
+  .stats-section h2 {
+    color: white;
+  }
+  
+  .stats-section p {
+    color: rgba(255,255,255,0.8);
+  }
+  
+  @media (max-width: 768px) {
+    .about-img-container {
+      margin-bottom: 30px;
+    }
+  }

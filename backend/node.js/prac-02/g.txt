@@ -1,0 +1,53 @@
+step 1:
+node project initialize
+Command: npm init 
+
+step 2:
+Package installation
+ Command: npm i package_name 
+
+dotenv - for secure crucial information (eg. Passkey, API_key, port)
+express - for routing
+nodemon (development only) - Hot reload
+mysql2 - for datable RDBMS
+sequelize - driver/connector
+sequelize-cli - for command line interface
+
+
+ex :     npm i dotenv express nodemon mysql2 sequelize sequelize-cli
+(it will create mode_modules)
+
+step 3:
+create server and open port with
+index.js file 
+
+step 4:
+Create Routes and Controllers directory/folder
+For each table we need separate router and Controller  for
+better efficiency.
+
+
+step 5: Connector/Driver Setup
+Command: sequelize-cli init
+(i will create config.json, models, migrations, seeders)
+
+
+
+step 6:
+Table creation
+Command: sequelize-cli model:generate --name Category --attributes name:string,img:string,status:boolean
+(it will create category.js , index.js in models directory)
+
+
+
+step 7:
+Migrate Tables 
+command: sequelize-cli db:migrate
+(before giving command must change database name relate with your database in config.json and it will connect with your db (migrate and migrated) )
+
+
+step 8:
+uploading img
+(for upload create somthing.js in config and create a upload directory to store imgs)\
+ (npm install multer)
+
